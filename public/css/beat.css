@@ -1,0 +1,479 @@
+@import url(https://fonts.googleapis.com/css?family=Shadows+Into+Light);
+
+body {
+  
+      background:#F0F3BD;
+
+}
+
+#menu{
+    background:#F0F3BD;
+  text-align:center;
+}
+
+#scoreboard{
+    background:#F0F3BD;
+  text-align:center;
+}
+
+ /* unvisited link */
+a:link {
+  color: #F0F3BD;
+  text-decoration: none;
+}
+
+/* visited link */
+a:visited {
+  color: #F0F3BD;
+  text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+  color: #02C39A;
+  text-decoration: none;
+}
+/* selected link */
+a:active {
+  color: #F0F3BD;
+  text-decoration: none;
+} 
+
+#exit {
+  height:30px;
+  width:30px;
+  background:#05668D;
+  border: 1px solid black;
+  border-radius:50px;
+  position:Absolute;
+  top:-30px;
+  z-index:50;
+  right:-15px;
+  -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+  
+}
+#exit:after {
+  content:"";
+  display:block;
+  height:15px;
+  width:15px;
+  background:transparent;
+  border-radius:50px;
+  position:absolute;
+  top:5px;
+  left:5px;
+  
+  border:3px solid #F0F3BD;
+  border-top-color:transparent;
+  
+}
+
+#exit:before {
+  content:"";
+  display:block;
+  height:10px;
+  width:3px;
+  background:#F0F3BD;
+  z-index:70;
+  position:Absolute;
+  right:13px;
+  top:6px;
+  
+}
+#circle {
+  height:40px;
+  width:40px;
+  background:transparent;
+  border:1px solid #02C39A;
+  border-radius:50px;
+  position:absolute;
+  top:-35px;
+  z-index:40;
+  right:-20px;
+  
+}
+
+#exit:hover {
+  background:#028090;
+  
+}
+
+
+
+#allthethings {
+  width:0px;
+  height:0px;
+  
+  border-left: 300px solid transparent;
+  border-right:300px solid transparent;
+  border-top: 300px solid transparent;
+  border-radius: px;
+  position:relative;
+  margin:auto;
+   transform: translate(5px, 10px);
+  
+  
+  
+  
+  
+  
+}
+
+
+
+
+#game {
+  
+  position:relative;
+  bottom:330px;
+  right:300px;
+  height:50px;
+  width:600px;
+  background:#05668D;
+  text-align:center;
+  font-size:30px;
+  background-size: 1px 300%;
+  -webkit-transition:0.5s;
+  transition:0.5s;
+  color:#F0F3BD;
+  font-family:shadows into light;
+  
+  cursor:pointer;
+
+  
+  
+  
+}
+
+#reminderText {
+  
+  position:relative;
+  height:50px;
+  width:600px;
+  background:#F0F3BD;
+  text-align:center;
+  font-size:30px;
+  background-size: 1px 300%;
+  -webkit-transition:0.5s;
+  transition:0.5s;
+  color:#05668D;
+  font-family:shadows into light;
+  transform: translate(350px, 200px);
+
+
+  
+  
+  
+}
+
+
+
+
+
+#game:hover {
+  background:#028090;
+  color:#02C39A;
+-webkit-transform:rotate(-1deg);
+  transform:rotate(-2deg);
+  
+  
+}
+
+#board:hover {
+  background:#028090;
+  color:#02C39A;
+   
+  -webkit-transform:rotate(-2deg);
+  transform:rotate(-2deg);
+  
+  
+}
+
+#credits:hover {
+  background:#028090;
+  color:#02C39A;
+  -webkit-transform:rotate(-2deg);
+  transform:rotate(-2deg);
+  
+}
+
+#another:hover {
+  background:#028090;
+  color:#02C39A;
+  -webkit-transform:rotate(-2deg);
+  transform:rotate(-2deg);
+  
+}
+
+#left {
+  height:100px;
+  width:600px;
+  background:#F0F3BD;
+  position:absolute;
+  z-index:6;
+  -webkit-transform:rotate(45deg);
+  transform:rotate(45deg);
+  top:-175px;
+  right:-104px;
+  border-top:1px solid #02C39A;
+  
+}
+#right {
+  height:100px;
+  width:600px;
+  background:#F0F3BD;
+  position:absolute;
+  top:-229px;
+  -webkit-transform:rotate(-45deg);
+  transform:rotate(-45deg);
+  z-index:7;
+  left:-56px;
+  border-top:1px solid #02C39A;
+  
+  
+}
+
+
+
+#game p {
+  position:relative;
+  top:2px;
+  right:4px;
+  
+  
+}
+
+#board {
+  height:50px;
+  width:500px;
+  background:#05668D;
+  position:relative;
+  bottom:345px;
+  right:240px;
+  text-align:center;
+  font-size:30px;
+  font-family:shadows into light;
+  color:#F0F3BD;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+  
+  
+   
+  
+}
+#board p {
+  position:relative;
+  top:0px;
+  right:9px;
+  
+}
+
+#another {
+  
+  height:50px;
+  width:400px;
+  background:#05668D;
+  position:relative;
+  bottom:360px;
+  right:200px;
+  font-size:30px;
+  text-align:center;
+  font-family:shadows into light;
+  color:#F0F3BD;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+  
+}
+
+#another p {
+  position:relative;
+  top:0px;
+  right:4px;
+  
+}
+
+#credits {
+  height:50px;
+  width:300px;
+  position:relative;
+  background:#05668D;
+  bottom:375px;
+  font-size:30px;
+  right:150px;
+  text-align:center;
+  font-family:shadows into light;
+  color:#F0F3BD;
+   -webkit-transition:0.5s;
+  transition:0.5s;
+  cursor:pointer;
+  
+}
+
+#credits p {
+  position:relative;
+  top:0px;
+  
+}
+
+#dr {
+    transform: translate(5px, 0px);
+  
+}
+
+#dr2 {
+    transform: translate(-300px, 170px);
+  
+}
+
+#dr3 {
+    transform: translate(-150px, -650px);
+  
+}
+
+#dr4 {
+    transform: translate(600px, -650px);
+  
+}
+
+
+
+#Bubbles{
+    animation: bubbles 1s infinite alternate;
+    transform-origin: bottom;
+}
+
+#Hands{
+    animation: bubbles 1s infinite alternate;
+    transform-origin: top;
+}
+
+
+@keyframes bubbles{
+    from {
+        transform: rotateY(0deg);
+    }
+    to {
+        transform: rotateY(30deg);
+    }
+    
+}
+
+table.steelBlueCols {
+  font-family:shadows into light;
+  border: 4px solid #028090;
+  background-color: #028090;
+  width: 400px;
+  text-align: center;
+  border-collapse: collapse;
+  margin-left:37%; 
+  margin-top:5%; 
+    
+}
+table.steelBlueCols td, table.steelBlueCols th {
+  border: 1px solid #028090;
+  padding: 5px 10px;
+}
+table.steelBlueCols tbody td {
+  font-size: 20px;
+  font-weight: bold;
+  color: #F0F3BD;
+}
+table.steelBlueCols td:nth-child(even) {
+  background: #05668D;
+}
+table.steelBlueCols thead {
+  background: #05668D;
+  border-bottom: 10px solid #028090;
+}
+table.steelBlueCols thead th {
+  font-size: 20px;
+  font-weight: bold;
+  color: #F0F3BD;
+  text-align: left;
+  border-left: 2px solid #028090;
+}
+table.steelBlueCols thead th:first-child {
+  border-left: none;
+}
+
+table.steelBlueCols tfoot td {
+  font-size: 20px;
+}
+table.steelBlueCols tfoot .links {
+  text-align: right;
+}
+table.steelBlueCols tfoot .links a{
+  display: inline-block;
+  background: #FFFFFF;
+  color: #398AA4;
+  padding: 2px 8px;
+  border-radius: 5px;
+}
+
+
+
+#buton{
+  background-color: #05668D; 
+  border: none;
+  color: #F0F3BD;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  font-family:shadows into light;
+  cursor:pointer;
+  top:70%;
+  left:35%;
+  position: absolute; 
+  z-index: 1;
+}
+
+#instr{
+    width:500px;
+    font-family:shadows into light;
+    color: #05668D;
+    font-size:30px;
+    top:10%;
+    left:35%; 
+    position: absolute; 
+    z-index: 1;
+}
+
+mark.red {
+    color:#ff0000;
+    background: none;
+}
+
+#points{
+    width:400px;
+    font-family:shadows into light;
+    color: #05668D;
+    font-size:30px;
+}
+
+#lives{
+    width:400px;
+    font-family:shadows into light;
+    color: red;
+    font-size:30px;
+}
+
+#canvas{
+            background-color: #F0F3BD;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        
+
+#svgBeat{
+    margin-left:1%;
+}
+
+

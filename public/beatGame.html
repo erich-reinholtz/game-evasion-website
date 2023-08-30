@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <title>Beat game</title>
+
+  <link rel="stylesheet" type="text/css" href="css/beat.css" media="screen"/>
+
+</head>
+
+<body>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+    <script src="sweetalert2.all.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/promise-polyfill"></script>
+    <script src="js/beatGame.js"></script>
+
+    <p id="instr"><mark class="red" >Warning:</mark> For the best note accuracy, we recommend using the Google Chrome browser. <br>Instructions: <br> Use the keys to spray away the virus. <br> You can do it! </p>
+    <button id="buton" onclick="removeButton(); game();">Start Game</button>
+
+
+    <div id="game1">
+        <canvas id="canvas" width="640" height="800" ></canvas>
+    </div>
+</body>
+
+</html>
